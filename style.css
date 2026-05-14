@@ -19,6 +19,8 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   min-height: 100vh;
   font-family: Georgia, "Times New Roman", serif;
@@ -26,6 +28,10 @@ body {
     radial-gradient(circle at top left, rgba(214, 166, 58, 0.16), transparent 28rem),
     linear-gradient(135deg, var(--green-950), var(--green-900) 46%, #10130f);
   color: var(--stone-200);
+}
+
+main {
+  flex: 1;
 }
 
 body.menu-open {
@@ -160,11 +166,16 @@ body.menu-open {
 .hero {
   position: relative;
   display: grid;
-  min-height: min(760px, 84vh);
+  min-height: min(620px, 66vh);
   padding: 8rem 1.25rem 5rem;
   place-items: center;
   isolation: isolate;
   overflow: hidden;
+}
+
+.hero--index {
+  min-height: min(560px, 58vh);
+  padding: 5rem 1.25rem 3rem;
 }
 
 .hero::before {
@@ -226,53 +237,36 @@ body.menu-open {
 .gateway {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1px;
-  width: min(1180px, calc(100% - 2rem));
-  margin: -3.2rem auto 4rem;
-  border: 1px solid rgba(214, 166, 58, 0.28);
-  background: rgba(214, 166, 58, 0.28);
-  box-shadow: 0 22px 48px var(--shadow);
+  gap: 1rem;
+  width: min(980px, calc(100% - 2rem));
+  margin: -2.5rem auto 4rem;
 }
 
 .gateway-card {
-  display: flex;
-  gap: 1rem;
-  min-height: 154px;
-  padding: 1.25rem;
-  background: rgba(13, 31, 24, 0.96);
-  color: var(--stone-200);
+  display: grid;
+  min-height: 118px;
+  padding: 1rem;
+  place-items: center;
+  border: 1px solid rgba(214, 166, 58, 0.35);
+  border-radius: 8px;
+  background: rgba(43, 43, 43, 0.32);
+  backdrop-filter: blur(2px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+  color: var(--gold-300);
+  text-align: center;
   text-decoration: none;
 }
 
 .gateway-card:hover,
 .gateway-card:focus-visible {
-  background: rgba(20, 50, 38, 0.98);
+  border-color: var(--gold-300);
+  background: rgba(20, 50, 38, 0.62);
   outline: none;
 }
 
-.gateway-card__mark {
-  display: grid;
-  flex: 0 0 42px;
-  width: 42px;
-  height: 42px;
-  place-items: center;
-  border: 1px solid rgba(241, 215, 138, 0.45);
-  border-radius: 50%;
-  color: var(--gold-300);
-  font-weight: 700;
-}
-
 .gateway-card strong {
-  display: block;
-  margin-bottom: 0.45rem;
   color: var(--gold-300);
-  font-size: 1.18rem;
-}
-
-.gateway-card small {
-  color: var(--stone-400);
-  font-size: 0.95rem;
-  line-height: 1.5;
+  font-size: clamp(1.15rem, 2vw, 1.35rem);
 }
 
 .content-section {
@@ -304,7 +298,7 @@ body.menu-open {
   align-items: center;
   justify-content: center;
   min-height: 64px;
-  margin-top: 4rem;
+  margin-top: auto;
   border-top: 1px solid rgba(214, 166, 58, 0.22);
   background: rgba(8, 19, 15, 0.92);
   color: var(--gold-300);
@@ -345,16 +339,16 @@ body.menu-open {
   }
 
   .hero {
-    min-height: 78vh;
-    padding-top: 7rem;
+    min-height: 56vh;
+    padding-top: 5rem;
   }
 
   .gateway {
     grid-template-columns: 1fr;
-    margin-top: -2rem;
+    margin-top: -1.5rem;
   }
 
   .gateway-card {
-    min-height: 128px;
+    min-height: 92px;
   }
 }
