@@ -7,14 +7,8 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <button id="menu-toggle" class="menu-button" type="button" aria-label="Otevřít menu" aria-expanded="false">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    <a class="site-title" href="index.html">Poklady Trominu</a>
-    <nav id="side-menu" class="side-menu" aria-label="Hlavní menu"></nav>
+  <header class="site-header site-header--index">
+    <a class="site-title" href="index.html">Hlavní stránka</a>
   </header>
 
   <main>
@@ -22,12 +16,12 @@
       <div class="hero__content">
         <p class="hero__kicker">Kronika výpravy do hlubin</p>
         <h1 id="page-title">Poklady Trominu</h1>
-        <p class="hero__text">Rozcestník k prologu, tvorbě postav, družině a základním pravidlům výpravy.</p>
+        <p class="hero__text">Rozcestník k prologu, tvorbě postav, postavám a základním pravidlům výpravy.</p>
       </div>
     </section>
 
     <section class="gateway" aria-label="Rozcestník">
-      <a class="gateway-card" href="#prolog">
+      <a class="gateway-card" href="prolog.html">
         <span class="gateway-card__mark">I</span>
         <span>
           <strong>Prolog</strong>
@@ -35,7 +29,7 @@
         </span>
       </a>
 
-      <a class="gateway-card" href="#tvorba-postavy">
+      <a class="gateway-card" href="tvorba-postavy.html">
         <span class="gateway-card__mark">II</span>
         <span>
           <strong>Tvorba postavy</strong>
@@ -43,7 +37,7 @@
         </span>
       </a>
 
-      <a class="gateway-card" href="#postavy">
+      <a class="gateway-card" href="postavy.html">
         <span class="gateway-card__mark">III</span>
         <span>
           <strong>Postavy</strong>
@@ -51,7 +45,7 @@
         </span>
       </a>
 
-      <a class="gateway-card" href="#zakladni-info">
+      <a class="gateway-card" href="zakladni-info.html">
         <span class="gateway-card__mark">IV</span>
         <span>
           <strong>Základní info</strong>
@@ -59,44 +53,10 @@
         </span>
       </a>
     </section>
-
-    <section id="prolog" class="content-section">
-      <div>
-        <p class="section-label">I</p>
-        <h2>Prolog</h2>
-      </div>
-      <p>Staré štoly Trominu se znovu probouzejí. Mezi zapečetěnými branami, kovem a kamennými značkami leží odkaz, který měl zůstat zapomenutý.</p>
-    </section>
-
-    <section id="tvorba-postavy" class="content-section">
-      <div>
-        <p class="section-label">II</p>
-        <h2>Tvorba postavy</h2>
-      </div>
-      <p>Místo pro pravidla tvorby postavy, povolené zdroje, úvodní vybavení a vazby na výpravu.</p>
-    </section>
-
-    <section id="postavy" class="content-section">
-      <div>
-        <p class="section-label">III</p>
-        <h2>Postavy</h2>
-      </div>
-      <p>Místo pro družinu, jednotlivé charaktery a pozdější odkazy na jejich samostatné stránky.</p>
-    </section>
-
-    <section id="zakladni-info" class="content-section">
-      <div>
-        <p class="section-label">IV</p>
-        <h2>Základní info</h2>
-      </div>
-      <p>Místo pro základní domluvy, poznámky ke světu, pravidla u stolu a organizační informace.</p>
-    </section>
   </main>
 
   <footer class="site-footer">
     <span>© 2026 Michal David</span>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>

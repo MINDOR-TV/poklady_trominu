@@ -1,9 +1,9 @@
 const menuData = {
   "Hlavní stránka": "index.html",
-  "Prolog": "#prolog",
-  "Tvorba postavy": "#tvorba-postavy",
-  "Postavy": "#postavy",
-  "Základní info": "#zakladni-info"
+  "Prolog": "prolog.html",
+  "Tvorba postavy": "tvorba-postavy.html",
+  "Postavy": "postavy.html",
+  "Základní info": "zakladni-info.html"
 };
 
 const menuContainer = document.getElementById("side-menu");
@@ -15,7 +15,8 @@ function createLink(label, href) {
   link.textContent = label;
   link.href = href;
 
-  if (href === window.location.hash || (href === "index.html" && !window.location.hash)) {
+  const currentPage = window.location.pathname.split("/").pop() || "index.html";
+  if (href === currentPage) {
     link.classList.add("is-active");
   }
 
