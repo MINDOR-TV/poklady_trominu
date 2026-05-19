@@ -1,21 +1,3 @@
-const faviconUrl = "https://mindor-tv.github.io/Oblagun/assets/poklady_trominu.png";
-
-function setFavicon(url) {
-  document.querySelectorAll('link[rel="icon"], link[rel="shortcut icon"], link[rel="apple-touch-icon"]').forEach((icon) => {
-    icon.remove();
-  });
-
-  ["icon", "shortcut icon", "apple-touch-icon"].forEach((rel) => {
-    const link = document.createElement("link");
-    link.rel = rel;
-    link.href = url;
-    link.type = "image/png";
-    document.head.appendChild(link);
-  });
-}
-
-setFavicon(faviconUrl);
-
 const menuData = {
   "Hlavní stránka": "index.html",
   "Prolog": "prolog.html",
