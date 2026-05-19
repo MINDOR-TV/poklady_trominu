@@ -137,6 +137,8 @@ body.menu-open {
   position: fixed;
   top: 64px;
   left: 0;
+  display: flex;
+  flex-direction: column;
   width: min(320px, 86vw);
   height: calc(100vh - 64px);
   padding: 1.15rem;
@@ -154,6 +156,12 @@ body.menu-open {
 
 .menu-section {
   margin-bottom: 0.45rem;
+}
+
+.menu-footer {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(214, 166, 58, 0.22);
 }
 
 .menu-link,

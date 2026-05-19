@@ -8,6 +8,7 @@ const menuData = {
 
 const menuContainer = document.getElementById("side-menu");
 const toggleButton = document.getElementById("menu-toggle");
+const oblagunHomeUrl = "https://mindor-tv.github.io/Oblagun/";
 
 function createLink(label, href) {
   const link = document.createElement("a");
@@ -77,6 +78,11 @@ function buildMenu() {
 
     menuContainer.appendChild(section);
   });
+
+  const footer = document.createElement("div");
+  footer.className = "menu-footer";
+  footer.appendChild(createLink("Hlavní stránka Oblagunu", oblagunHomeUrl));
+  menuContainer.appendChild(footer);
 }
 
 function setMenuVisible(isVisible) {
