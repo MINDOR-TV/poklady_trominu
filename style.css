@@ -433,6 +433,27 @@ body.menu-open {
   margin-bottom: 0;
 }
 
+.page-reference {
+  margin: 1.5rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(214, 166, 58, 0.22);
+  color: var(--stone-400);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.page-reference a {
+  color: var(--gold-300);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.page-reference a:hover,
+.page-reference a:focus-visible {
+  text-decoration: underline;
+  outline: none;
+}
+
 .info-list {
   display: grid;
   gap: 0.8rem;
