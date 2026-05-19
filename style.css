@@ -343,6 +343,7 @@ body.menu-open {
 }
 
 .site-footer {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -350,6 +351,25 @@ body.menu-open {
   margin-top: auto;
   border-top: 1px solid rgba(214, 166, 58, 0.22);
   background: rgba(8, 19, 15, 0.92);
+  color: var(--gold-300);
+}
+
+.site-footer__link {
+  position: absolute;
+  left: clamp(1rem, 3vw, 1.5rem);
+  color: var(--gold-300);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.site-footer__link:hover,
+.site-footer__link:focus-visible {
+  color: #fff4c8;
+  text-decoration: underline;
+  outline: none;
+}
+
+.site-footer__link:visited {
   color: var(--gold-300);
 }
 
