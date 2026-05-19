@@ -387,6 +387,14 @@ body.menu-open {
   line-height: 1.35;
 }
 
+.page-subtitle {
+  margin: 0 0 1.35rem;
+  color: var(--gold-300);
+  font-size: clamp(1.35rem, 3vw, 2rem);
+  line-height: 1.25;
+  letter-spacing: 0;
+}
+
 .content-block {
   padding: 1.5rem 0;
   border-top: 1px solid rgba(214, 166, 58, 0.22);
