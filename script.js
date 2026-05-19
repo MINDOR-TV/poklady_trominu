@@ -2,8 +2,8 @@ const menuData = {
   "Hlavní stránka": "index.html",
   "Prolog": "prolog.html",
   "Tvorba postavy": "tvorba-postavy.html",
-  "Postavy": "postavy.html",
-  "Základní info": "zakladni-info.html"
+  // "Postavy": "postavy.html",
+  // "Základní info": "zakladni-info.html"
 };
 
 const menuContainer = document.getElementById("side-menu");
