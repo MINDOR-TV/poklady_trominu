@@ -522,6 +522,22 @@ body.menu-open {
   border: 0;
 }
 
+.note-box {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid rgba(214, 166, 58, 0.28);
+  border-left: 4px solid var(--gold-500);
+  border-radius: 8px;
+  background: rgba(8, 19, 15, 0.42);
+  color: #ded3ba;
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+.note-box p {
+  margin: 0;
+}
+
 .inline-action {
   display: inline-flex;
   width: max-content;
