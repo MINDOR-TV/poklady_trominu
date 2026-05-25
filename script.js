@@ -8,7 +8,7 @@ const menuData = {
 
 const menuContainer = document.getElementById("side-menu");
 const toggleButton = document.getElementById("menu-toggle");
-const oblagunHomeUrl = "https://mindor-tv.github.io/Oblagun/";
+const oblagunHomeUrl = "https://mindor-tv.github.io/oblagun/index.html";
 
 function createLink(label, href) {
   const link = document.createElement("a");
